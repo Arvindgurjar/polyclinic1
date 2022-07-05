@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+   
+}
+body{
+    background: wheat;
+}
+
+a{
+    text-decoration: none;
+}
+.address{
+    font-size: medium;
+color:#fff;
+font-weight:5px;
+animation-name: address;
+animation-duration:2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state:inherit;
+
+}
+@keyframes address {
+       0%{
+         opacity:0;
+       }
+      
+       100%{
+        opacity:1;
+       }
+      
+}
+.address:hover{
+    opacity:1;
+    animation: none;
+}
+.icon:hover{
+    background:blue;
+
+}
+.icon2:hover{
+    background:#DA416B;
+
+}
+.icon3:hover{
+    background:burlywood;
+
+}
+.name{
+    color: black;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: large;
+}
+.navbar-nav  .nav-item .nav-link:hover{
+
+    padding: 0;
+    background: orange;
+} 
+.header-img{
+    width:46px;
+    height: 46px;
+    
+}
+.motoline{
+    font-size:60px;
+    margin:0;
+    font-family: cursive;
+    color: coral;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      
+}
+.motolinepara{
+    font-size:18px ;
+    font-family: serif;
+    margin-left: -10%;
+    color: #000;
+    text-shadow: 1px 1px greenyellow;
+
+}
+.carousel-caption{
+    margin-bottom:6%;
+    margin-left: 25%;
+   
+}
+
+.slider{
+    background: burlywood;
+   
+}
+.list-group-item:hover{
+    background:lightgrey;
+}
+.timetable{
+    font-size: small;
+}
+h4::after{
+    background: white;
+    height:2px;
+    width: 80%;
+    content: "";
+   display: block;
+   margin:5% auto;
+}
+.timetable::after{
+    background: white;
+    height:1px;
+    width: 70%;
+    content: "";
+   display: block;
+   margin:3% auto;
+}
+.timetable1:hover{
+    background:rgb(103, 103, 255);
+    border-radius: 4%;
+    
+}
+.welcomeheading{
+    font-family:'Brush Script MT',cursive;
+    font-size: 70px;
+    margin-top:10px;
+    animation: welcome;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+  
+}
+@keyframes welcome{
+           0%{
+            opacity:1;
+            color: #DA416B;
+           }
+           10%{
+            opacity:0.8;
+            color: rgb(10, 149, 103);
+           }
+           30%{
+            opacity:0.7;
+            color: rgb(88, 57, 18);
+           }
+           50%{
+            color: rgb(202, 202, 17);
+           }
+           70%{
+            color: rgb(10, 48, 44);
+           }
+           80%{
+            opacity:0.5;
+            color: rgb(93, 172, 14);
+           }
+           100%{
+               opacity:1;
+               color: rgb(2, 11, 21);
+           }
+}
+.coo{
+    margin-left:30%;
+}
+.poly{
+    margin-left:60%;
+}
+.welcomeheading:hover{
+    animation: none;
+    color: #000;
+
+}
+.healthheading{
+    color: rgb(0, 84, 84);
+    font-weight: bold;
+}
+.healthheading::after{
+    background: aliceblue;
+    height:2px;
+    width:40%;
+    margin:2% auto;
+    content: "";
+    display:block;
+}
+.healthpara{
+    font-family: 'Lucida Console',monospace;
+    margin: auto;
+    color: darkgreen;
+
+}
+ .user-select-none .carousel-indicators{
+    background:cadetblue;
+    margin-bottom:-6%;
+
+     border-radius: 70%;
+}
+.card-text{
+    font-family: 'Times New Roman',serif;
+    position: relative;
+    
+}
+.whyheading{
+   color: tomato;
+}
+.whypara{
+   color: seagreen;
+}
+.medicalspe{
+    font-weight: bolder;
+    font-size:40px;
+    margin: 5% auto;
+    font-family: 'Lucida Handwriting',cursive;
+    animation: medical;
+    animation-iteration-count: infinite;
+    animation-duration:10s;
+    animation-fill-mode: both;
+    animation-play-state: inherit;
+    animation-delay: 2s;
+}
+@keyframes medical {
+    0%{
+     color: rgb(0, 255, 170);
+     font-size: 40px;
+     font-family: 'Lucida Handwriting',cursive;
+    }
+    20%{
+      color:rgb(255, 0, 0);
+      font-size: 35px;
+      font-family:'Brush Script MT',cursive;
+    }
+    40%{
+      color: yellow;
+      font-size: 32px;
+      font-family: 'Lucida Handwriting',cursive;}
+    60%{
+      color: chartreuse;
+      font-size: 28px;
+      font-family:'Brush Script MT',cursive;
+    }
+    80%{
+     color: violet;
+     font-size: 35px;
+     font-family: 'Lucida Handwriting',cursive;
+    }
+    100%{
+       color: #000;
+       font-size: 40px;
+       font-family:'Brush Script MT',cursive;
+    }
+}
+
+.degree{
+    font-size: smaller;
+    font-weight:bold;
+    margin-top: -10%;
+}
+.charge{
+    font-weight:bold;
+    margin-left: -50%;
+    margin-top: 6%;
+    color: brown;
+}
+.card:hover h4::after{
+    background: cyan;
+}
+.cardbtn{
+    display: none;
+    margin-left: 15%;
+}
+.card:hover{
+ background: cyan;
+ backface-visibility: hidden;
+ transition:2s;
+}
+
+.card:hover .cardbtn{
+    position: absolute;
+    display:block;
+    z-index: 1;
+    
+}
+.bgopa{
+    background: #000;
+    opacity: .8;
+    border-radius: 10%;
+}
+.free{
+    color:rgb(0, 81, 132);
+}
+.colfree{
+    color: blue;
+}
+.top{
+    height: 50px;
+    width: 50px;
+    background-color: darkgray;
+    border-radius: 50%;
+    text-align: center;
+    margin :0 0% 5% 93%;
+}
+@media only screen and (max-width:1030px) {
+   
+    .motoline{
+        font-size:50px;
+      
+          
+    }
+    .motolinepara{
+        font-size:15px ;
+          margin-left: -20%;
+    
+    }
+    .carousel-caption{
+        margin-bottom:1%;
+       
+    }
+    .poly{
+        margin-left:56%;
+    }
+
+   }
+
+@media only screen and (max-width: 780px) {
+   
+   .name{
+    font-size: medium;
+   }
+   .motoline{
+    font-size:40px;
+  
+      
+}
+.motolinepara{
+    font-size:10px ;
+   
+    margin-left: -20%;
+
+}
+.carousel-caption{
+    margin-bottom:0%;
+  
+}
+.cardbtn{
+    display: none;
+    margin-left: 32%;
+}
+
+  }
+  @media only screen and (max-width: 600px) {
+    .header-img{
+     height:35px;
+     width: 35px;
+    }
+
+    .motoline{
+        font-size:30px;
+        margin-bottom: -6%;
+      
+          
+    }
+    .motolinepara{
+        font-size:10px ;
+        margin-left: -50%;
+    
+    }
+    .carousel-caption{
+        margin-bottom:-4%;    
+    }
+    .coo{
+        margin-left:30%;
+    }
+    .poly{
+        margin-left:55%;
+    }
+    .welcomeheading{
+        font-size: 60px;
+    }
+    .cardbtn{
+        display: none;
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 437px) {
+   
+    .motoline{
+        font-size:15px;
+      
+          
+    }
+    .motolinepara{
+        font-size:5px ;
+        font-family: serif;
+        margin-left: -20%;
+    
+    }
+    .carousel-caption{
+        margin-bottom:-4%;
+        
+    }
+    .coo{
+        margin-left:25%;
+    }
+    .poly{
+        margin-left:48%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+   
+    .motoline{
+        font-size:10px;
+        margin-bottom:-20%;
+    }
+    .motolinepara{
+        font-size:5px ;
+        font-family: serif;
+        margin-left: -20%;
+    
+    }
+    .carousel-caption{
+        margin-bottom:-6%;
+        
+       
+    }
+    .coo{
+        margin-left:20%;
+    }
+    .poly{
+        margin-left:50%;
+    }
+    .welcomeheading{
+        font-size: 40px;
+    }
+    .cardbtn{
+        display: none;
+        margin-left: 15%;
+    }
+    
+}
